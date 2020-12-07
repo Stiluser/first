@@ -7,8 +7,8 @@ import java.util.ArrayList;
 	// write your code here
         int ll = 0;
         Car volvo1 = new Car("вольво",50 ,50);
-        Gas_station lukoil1 = new Gas_station("Лукойл 1");
-        Gas_station lukoil2;
+        GasStation lukoil1 = new GasStation("Лукойл 1");
+        GasStation lukoil2;
 
         volvo1.params();
         lukoil1.refill(volvo1);

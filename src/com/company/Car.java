@@ -3,54 +3,54 @@ package com.company;
 class Car {
     private int wheight;
     private String model;
-    private int fuel_perc;
-    boolean eng_on;
+    private int fuelPerc;
+    boolean engOn;
 
     Car() {
         wheight = 0;
         model = "0";
-        fuel_perc = 0;
-        eng_on = false;
+        fuelPerc = 0;
+        engOn = false;
     }
 
     Car(String a) {
         model = a;
         wheight = 0;
-        fuel_perc = 0;
-        eng_on = false;
+        fuelPerc = 0;
+        engOn = false;
     }
 
-    Car(String model, int wheight, int fuel_perc) {
+    Car(String model, int wheight, int fuelPerc) {
         this.model = model;
         this.wheight = wheight;
-        this.fuel_perc = fuel_perc;
-        eng_on = false;
+        this.fuelPerc = fuelPerc;
+        engOn = false;
     }
 
     public void start() {
-        if (eng_on)
+        if (engOn)
             System.out.println("Машина " + model + " уже работает");
         else {
-            eng_on = true;
+            engOn = true;
             System.out.println("Машина " + model + " запустилась");
         }
     }
 
     public void params() {
-        System.out.println(model + wheight + fuel_perc);
+        System.out.println(model + wheight + fuelPerc);
     }
 
     public void refill() {
-        fuel_perc = 100;
+        fuelPerc = 100;
     }
 
     public void go() {
-        if (fuel_perc > 0 && eng_on) {
-            fuel_perc--;
+        if (fuelPerc > 0 && engOn) {
+            fuelPerc--;
             System.out.println("Машина " + model + "едет");
-        } else if (!eng_on)
+        } else if (!engOn)
             System.out.println("Машину " + model + "нужно запустить");
-        if (fuel_perc == 0)
+        if (fuelPerc == 0)
             System.out.println("Машина " + model + "не поедет без топлива");
     }
 

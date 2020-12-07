@@ -1,7 +1,7 @@
 package com.company;
-class Gas_station{
+class GasStation{
     private String name;
-    Gas_station(String name){
+    GasStation(String name){
         this.name = name;
     }
     public void refill(Car a){
