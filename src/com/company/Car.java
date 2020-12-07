@@ -1,32 +1,7 @@
 package com.company;
 
-class Car {
-    private int weight;
-    private String model;
-    private int fuelPerc;
-    boolean engOn;
-
-    Car() {
-        weight = 0;
-        model = "0";
-        fuelPerc = 0;
-        engOn = false;
-    }
-
-    Car(String a) {
-        model = a;
-        weight = 0;
-        fuelPerc = 0;
-        engOn = false;
-    }
-
-    Car(String model, int wheight, int fuelPerc) {
-        this.model = model;
-        this.weight = wheight;
-        this.fuelPerc = fuelPerc;
-        engOn = false;
-    }
-
+class Car extends Vehicle {
+    @Override
     public void start() {
         if (engOn)
             System.out.println("Машина " + model + " уже работает");
@@ -34,14 +9,6 @@ class Car {
             engOn = true;
             System.out.println("Машина " + model + " запустилась");
         }
-    }
-
-    public void params() {
-        System.out.println(model + weight + fuelPerc);
-    }
-
-    public void refill() {
-        fuelPerc = 100;
     }
 
     public void go() {
@@ -54,7 +21,5 @@ class Car {
             System.out.println("Машина " + model + "не поедет без топлива");
     }
 
-    public String getModel() {
-        return model;
-    }
+
 }
