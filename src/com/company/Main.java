@@ -1,12 +1,13 @@
 package com.company;
+
 import java.util.ArrayList;
 
-    public class Main {
+public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
         int ll = 0;
-        Car volvo1 = new Car("вольво",50 ,50);
+        Car volvo1 = new Car("вольво", 50, 50);
         GasStation lukoil1 = new GasStation("Лукойл 1");
         GasStation lukoil2;
 

@@ -1,10 +1,13 @@
 package com.company;
-class GasStation{
+
+class GasStation {
     private String name;
-    GasStation(String name){
+
+    GasStation(String name) {
         this.name = name;
     }
-    public void refill(Car a){
+
+    public void refill(Car a) {
         a.refill();
         System.out.println("Машина " + a.getModel() + " заправлена");
     }

@@ -1,6 +1,12 @@
 package com.company;
 
 class Car extends Vehicle {
+    int numOfWheels = 4;
+// Можно ли такоуй хуйней заниматься или конструкторы иначе лучше делать?
+    Car(String model, int wheight, int fuelPerc) {
+        super(model, wheight, fuelPerc);
+    }
+
     @Override
     public void start() {
         if (engOn)

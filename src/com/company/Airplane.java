@@ -1,6 +1,12 @@
 package com.company;
 
 class Airplane extends Vehicle {
+    int numOfWings = 2;
+
+    Airplane(String model, int wheight, int fuelPerc) {
+        super(model, wheight, fuelPerc);
+    }
+
     @Override
     public void start() {
         if (engOn)

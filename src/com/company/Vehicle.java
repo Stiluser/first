@@ -5,6 +5,7 @@ public class Vehicle {
     protected String model;
     protected int fuelPerc;
     protected boolean engOn;
+
     Vehicle() {
         weight = 0;
         model = "0";
@@ -25,16 +26,22 @@ public class Vehicle {
         this.fuelPerc = fuelPerc;
         engOn = false;
     }
-    public void params(){
+
+    public void params() {
         System.out.println(model + weight + fuelPerc);
     }
-    public void refill(){
+
+    public void refill() {
         fuelPerc = 100;
     }
-    public String getModel() { return model; }
-    public void start(){
+
+    public String getModel() {
+        return model;
+    }
+
+    public void start() {
         if (engOn)
-            System.out.println("Транспортное средство "+ model +" уже работает");
+            System.out.println("Транспортное средство " + model + " уже работает");
         else {
             engOn = true;
             System.out.println("Транспортное средство " + model + " запустилось");
