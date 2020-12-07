@@ -5,6 +5,7 @@ class Airplane {
     private int fuelPerc;
     boolean engOn;
 
+
     Airplane() {
         weight =0;
         model="none";
