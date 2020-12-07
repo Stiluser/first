@@ -1,13 +1,13 @@
 package com.company;
 
 class Car {
-    private int wheight;
+    private int weight;
     private String model;
     private int fuelPerc;
     boolean engOn;
 
     Car() {
-        wheight = 0;
+        weight = 0;
         model = "0";
         fuelPerc = 0;
         engOn = false;
@@ -15,14 +15,14 @@ class Car {
 
     Car(String a) {
         model = a;
-        wheight = 0;
+        weight = 0;
         fuelPerc = 0;
         engOn = false;
     }
 
     Car(String model, int wheight, int fuelPerc) {
         this.model = model;
-        this.wheight = wheight;
+        this.weight = wheight;
         this.fuelPerc = fuelPerc;
         engOn = false;
     }
@@ -37,7 +37,7 @@ class Car {
     }
 
     public void params() {
-        System.out.println(model + wheight + fuelPerc);
+        System.out.println(model + weight + fuelPerc);
     }
 
     public void refill() {

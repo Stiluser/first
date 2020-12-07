@@ -1,25 +1,25 @@
 package com.company;
 class Airplane {
-    private int wheight;
+    private int weight;
     private String model;
     private int fuelPerc;
     boolean engOn;
 
     Airplane() {
-        wheight=0;
+        weight =0;
         model="none";
         fuelPerc =0;
         engOn = false;
     }
     Airplane(String model){
         this.model = model;
-        wheight = 0;
+        weight = 0;
         fuelPerc = 0;
         engOn = false;
     }
     Airplane(String model,int wheight,int fuel_perc){
         this.model = model;
-        this.wheight = wheight;
+        this.weight = wheight;
         this.fuelPerc = fuel_perc;
         engOn = false;
     }
@@ -32,7 +32,7 @@ class Airplane {
         }
     }
     public void params(){
-        System.out.println(model + wheight + fuelPerc);
+        System.out.println(model + weight + fuelPerc);
     }
     public void refill(){
         fuelPerc = 100;
